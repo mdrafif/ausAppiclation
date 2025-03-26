@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="form_container">
+
+                <h1>Australlia Application Checker</h1>
+                <input type="text" id="passport" placeholder="Enter your Passport">
+                <button id="click" onclick="redirect()">Login</button>
+
+        </div>
+        </div>
+    </div>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(0 55 119);
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .form {
+            background: #fff;
+            padding: 30px;
+            text-align: center;
+            min-height: 187px;
+        }
+        
+      
+        
+        input {
+            display: block;
+            margin: 16px;
+            padding: 12px;
+            font-family: arial;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            width: 90%;
+            background: #ddd;
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+            font-family: arial;
+            font-size: 30px;
+        }
+        button {
+            cursor: pointer;
+            background: rgb(0 55 119);
+            color: white;
+            display: block;
+            margin: 16px;
+            padding: 12px;
+            font-family: arial;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            width: 90%;
+        }
+
+    </style>
+    <script>
+        
+        function redirect(){
+         var test =  document.querySelector('#passport');
+         if(test.value == "12345"){
+                 window.location.href="blank.html";
+         }
+         else{
+              alert("invalid Passport")
+         }
+
+           }
+        
+            
+          
+        
+      
+       
+    </script>
+</body>
+</html>
